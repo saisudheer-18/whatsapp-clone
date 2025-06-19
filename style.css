@@ -1,0 +1,130 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e5ddd5;
+}
+
+
+.chat-container {
+  max-width: 420px;
+  height: 96vh;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #075E54;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left .profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-left span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header-right i {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  scrollbar-width: none ;
+  background-color: #ece5dd;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  text-align: left;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #fff;
+  text-align: left;
+}
+
+.chat-date {
+  text-align: center;
+  background-color: #d9d9d9;
+  color: #333;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin: 10px auto;
+  width: fit-content;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  background-color: #fff;
+}
+
